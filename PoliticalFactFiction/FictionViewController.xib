@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="BalsamiqSansRegular.ttf">
+            <string>BalsamiqSans</string>
+            <string>BalsamiqSans</string>
+            <string>BalsamiqSans</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FictionViewController">
+            <connections>
+                <outlet property="answerLabel" destination="w2P-e9-Ybx" id="YTf-tu-Dk5"/>
+                <outlet property="labelCollection" destination="p3h-yI-a85" id="LEQ-du-TNN"/>
+                <outlet property="responseLabel" destination="Jk7-Qr-PQc" id="oLW-EO-Osk"/>
+                <outlet property="scoreLabel" destination="tJf-i1-qDU" id="kdQ-PI-FTT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3h-yI-a85">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;response&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jk7-Qr-PQc">
+                            <rect key="frame" x="67" y="158" width="185" height="40"/>
+                            <fontDescription key="fontDescription" name="BalsamiqSans" family="Balsamiq Sans" pointSize="40"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer: &lt;answer&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="w2P-e9-Ybx">
+                            <rect key="frame" x="31" y="239" width="257" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Q7f-71-Ixu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BalsamiqSans" family="Balsamiq Sans" pointSize="30"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJf-i1-qDU">
+                            <rect key="frame" x="8" y="8" width="104" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="br8-8T-cwD"/>
+                                <constraint firstAttribute="width" constant="104" id="tkd-AV-3t0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BalsamiqSans" family="Balsamiq Sans" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="w2P-e9-Ybx" firstAttribute="top" secondItem="Jk7-Qr-PQc" secondAttribute="bottom" constant="41" id="5Me-GP-UKh"/>
+                        <constraint firstItem="Jk7-Qr-PQc" firstAttribute="top" secondItem="p3h-yI-a85" secondAttribute="top" constant="158" id="MGR-B3-NXL"/>
+                        <constraint firstItem="tJf-i1-qDU" firstAttribute="leading" secondItem="p3h-yI-a85" secondAttribute="leadingMargin" id="NU5-qS-bbQ"/>
+                        <constraint firstItem="tJf-i1-qDU" firstAttribute="top" secondItem="p3h-yI-a85" secondAttribute="topMargin" id="QL6-yp-gFy"/>
+                        <constraint firstItem="Jk7-Qr-PQc" firstAttribute="centerX" secondItem="w2P-e9-Ybx" secondAttribute="centerX" id="VP2-UL-IG8"/>
+                        <constraint firstItem="Jk7-Qr-PQc" firstAttribute="leading" secondItem="p3h-yI-a85" secondAttribute="leading" constant="67" id="eRQ-az-uvF"/>
+                        <constraint firstItem="Jk7-Qr-PQc" firstAttribute="centerX" secondItem="p3h-yI-a85" secondAttribute="centerX" id="oqk-FB-scu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="p3h-yI-a85" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CPU-0K-fJJ"/>
+                <constraint firstAttribute="bottom" secondItem="p3h-yI-a85" secondAttribute="bottom" id="CyQ-rj-HdR"/>
+                <constraint firstItem="p3h-yI-a85" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IlM-77-ZmX"/>
+                <constraint firstAttribute="trailing" secondItem="p3h-yI-a85" secondAttribute="trailing" id="ZD5-00-G6Y"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="952" y="603"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_PoliticalFactFiction {
+  umbrella header "Pods-PoliticalFactFiction-umbrella.h"
+
+  export *
+  module * { export * }
+}

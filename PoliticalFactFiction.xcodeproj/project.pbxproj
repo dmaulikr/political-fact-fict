@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B482E641D1FAD30001CC564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B482E631D1FAD30001CC564 /* AppDelegate.swift */; };
+		2B482E661D1FAD30001CC564 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B482E651D1FAD30001CC564 /* StartScreenViewController.swift */; };
+		2B482E691D1FAD30001CC564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B482E671D1FAD30001CC564 /* Main.storyboard */; };
+		2B482E6B1D1FAD30001CC564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B482E6A1D1FAD30001CC564 /* Assets.xcassets */; };
+		2B482E6E1D1FAD30001CC564 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B482E6C1D1FAD30001CC564 /* LaunchScreen.storyboard */; };
+		2B482E791D1FAD30001CC564 /* PoliticalFactFictionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B482E781D1FAD30001CC564 /* PoliticalFactFictionTests.swift */; };
+		2B482E841D1FAD30001CC564 /* PoliticalFactFictionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B482E831D1FAD30001CC564 /* PoliticalFactFictionUITests.swift */; };
+		2B7ADE741D31E067008E3D93 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B7ADE731D31E067008E3D93 /* GoogleService-Info.plist */; };
+		2B7ADE761D31E998008E3D93 /* SinglePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7ADE751D31E998008E3D93 /* SinglePlayerViewController.swift */; };
+		2B84529D1D320A5000255AFD /* SP_QuestionContainer_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B84529C1D320A5000255AFD /* SP_QuestionContainer_ViewController.swift */; };
+		5C2909BC1D346D7B00E6BA9A /* BalsamiqSansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C2909B81D346D7B00E6BA9A /* BalsamiqSansBold.ttf */; };
+		5C2909BD1D346D7B00E6BA9A /* BalsamiqSansBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C2909B91D346D7B00E6BA9A /* BalsamiqSansBoldItalic.ttf */; };
+		5C2909BE1D346D7B00E6BA9A /* BalsamiqSansItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C2909BA1D346D7B00E6BA9A /* BalsamiqSansItalic.ttf */; };
+		5C2909BF1D346D7B00E6BA9A /* BalsamiqSansRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C2909BB1D346D7B00E6BA9A /* BalsamiqSansRegular.ttf */; };
+		5C6E13B91D8DE62A006D3207 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6E13B81D8DE62A006D3207 /* CreditsViewController.swift */; };
+		5C70CCE61D3A993800C5C84A /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C70CCE51D3A993800C5C84A /* GameOverViewController.swift */; };
+		5C8820C61D3BE2A70041F539 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8820C51D3BE2A70041F539 /* Utilities.swift */; };
+		5C944F141D39328400D0F2F1 /* PauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C944F131D39328400D0F2F1 /* PauseViewController.swift */; };
+		5C944F161D39630A00D0F2F1 /* MultiplayerOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C944F151D39630A00D0F2F1 /* MultiplayerOptionsViewController.swift */; };
+		5C979BDC1D3407E800F9518A /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C979BDB1D3407E800F9518A /* HelpViewController.swift */; };
+		5CA254271D7366570024B927 /* tap-warm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5CA254261D7366570024B927 /* tap-warm.wav */; };
+		5CA254381D738F370024B927 /* beep-negative.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5CA254361D738F370024B927 /* beep-negative.wav */; };
+		5CA254391D738F370024B927 /* beep-positive.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5CA254371D738F370024B927 /* beep-positive.wav */; };
+		5CB5AC001D356374001EB823 /* FictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5ABFE1D356374001EB823 /* FictionViewController.swift */; };
+		5CB5AC011D356374001EB823 /* FictionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5ABFF1D356374001EB823 /* FictionViewController.xib */; };
+		5CB5AC041D3563EE001EB823 /* StatementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5AC021D3563EE001EB823 /* StatementViewController.swift */; };
+		5CB5AC051D3563EE001EB823 /* StatementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5AC031D3563EE001EB823 /* StatementViewController.xib */; };
+		5CB5AC081D3563F6001EB823 /* FactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5AC061D3563F6001EB823 /* FactViewController.swift */; };
+		5CB5AC091D3563F6001EB823 /* FactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5AC071D3563F6001EB823 /* FactViewController.xib */; };
+		800A1B921D6CFB8A0019A24D /* MultiGameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800A1B911D6CFB8A0019A24D /* MultiGameOverViewController.swift */; };
+		8013A0F41D6CA79300663F72 /* EndRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013A0F31D6CA79300663F72 /* EndRoundViewController.swift */; };
+		8090C8811D6906EA00C90845 /* MultiPlayerTeamReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090C8801D6906EA00C90845 /* MultiPlayerTeamReadyViewController.swift */; };
+		80F8E35E1D6E432D00FB275B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F8E35D1D6E432D00FB275B /* CustomTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B482E751D1FAD30001CC564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B482E581D1FAD30001CC564 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B482E5F1D1FAD30001CC564;
+			remoteInfo = PoliticalFactFiction;
+		};
+		2B482E801D1FAD30001CC564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B482E581D1FAD30001CC564 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B482E5F1D1FAD30001CC564;
+			remoteInfo = PoliticalFactFiction;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EA61146A50F6DF5CC6DA2F0 /* Pods-PoliticalFactFictionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoliticalFactFictionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoliticalFactFictionUITests/Pods-PoliticalFactFictionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B482E601D1FAD30001CC564 /* PoliticalFactFiction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoliticalFactFiction.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B482E631D1FAD30001CC564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B482E651D1FAD30001CC564 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		2B482E681D1FAD30001CC564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B482E6A1D1FAD30001CC564 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B482E6D1D1FAD30001CC564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B482E6F1D1FAD30001CC564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B482E741D1FAD30001CC564 /* PoliticalFactFictionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoliticalFactFictionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B482E781D1FAD30001CC564 /* PoliticalFactFictionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalFactFictionTests.swift; sourceTree = "<group>"; };
+		2B482E7A1D1FAD30001CC564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B482E7F1D1FAD30001CC564 /* PoliticalFactFictionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoliticalFactFictionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B482E831D1FAD30001CC564 /* PoliticalFactFictionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalFactFictionUITests.swift; sourceTree = "<group>"; };
+		2B482E851D1FAD30001CC564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B7ADE731D31E067008E3D93 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2B7ADE751D31E998008E3D93 /* SinglePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePlayerViewController.swift; sourceTree = "<group>"; };
+		2B84529C1D320A5000255AFD /* SP_QuestionContainer_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SP_QuestionContainer_ViewController.swift; sourceTree = "<group>"; };
+		3F544BAE16FCC93071D2B3A2 /* Pods-PoliticalFactFictionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoliticalFactFictionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoliticalFactFictionTests/Pods-PoliticalFactFictionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		410C8DBBB3A4A7FB5335D583 /* Pods-PoliticalFactFiction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoliticalFactFiction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoliticalFactFiction/Pods-PoliticalFactFiction.debug.xcconfig"; sourceTree = "<group>"; };
+		5073A7A869CE2433963EDD96 /* Pods-PoliticalFactFiction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoliticalFactFiction.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoliticalFactFiction/Pods-PoliticalFactFiction.release.xcconfig"; sourceTree = "<group>"; };
+		5C2909B81D346D7B00E6BA9A /* BalsamiqSansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BalsamiqSansBold.ttf; path = Resources/BalsamiqSansBold.ttf; sourceTree = "<group>"; };
+		5C2909B91D346D7B00E6BA9A /* BalsamiqSansBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BalsamiqSansBoldItalic.ttf; path = Resources/BalsamiqSansBoldItalic.ttf; sourceTree = "<group>"; };
+		5C2909BA1D346D7B00E6BA9A /* BalsamiqSansItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BalsamiqSansItalic.ttf; path = Resources/BalsamiqSansItalic.ttf; sourceTree = "<group>"; };
+		5C2909BB1D346D7B00E6BA9A /* BalsamiqSansRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BalsamiqSansRegular.ttf; path = Resources/BalsamiqSansRegular.ttf; sourceTree = "<group>"; };
+		5C6E13B81D8DE62A006D3207 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		5C70CCE51D3A993800C5C84A /* GameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		5C8820C51D3BE2A70041F539 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		5C944F131D39328400D0F2F1 /* PauseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseViewController.swift; sourceTree = "<group>"; };
+		5C944F151D39630A00D0F2F1 /* MultiplayerOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerOptionsViewController.swift; sourceTree = "<group>"; };
+		5C979BDB1D3407E800F9518A /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		5CA254261D7366570024B927 /* tap-warm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "tap-warm.wav"; path = "Sounds/tap-warm.wav"; sourceTree = "<group>"; };
+		5CA254361D738F370024B927 /* beep-negative.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "beep-negative.wav"; path = "Sounds/beep-negative.wav"; sourceTree = "<group>"; };
+		5CA254371D738F370024B927 /* beep-positive.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "beep-positive.wav"; path = "Sounds/beep-positive.wav"; sourceTree = "<group>"; };
+		5CB5ABFE1D356374001EB823 /* FictionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FictionViewController.swift; sourceTree = "<group>"; };
+		5CB5ABFF1D356374001EB823 /* FictionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FictionViewController.xib; sourceTree = "<group>"; };
+		5CB5AC021D3563EE001EB823 /* StatementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatementViewController.swift; sourceTree = "<group>"; };
+		5CB5AC031D3563EE001EB823 /* StatementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatementViewController.xib; sourceTree = "<group>"; };
+		5CB5AC061D3563F6001EB823 /* FactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactViewController.swift; sourceTree = "<group>"; };
+		5CB5AC071D3563F6001EB823 /* FactViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FactViewController.xib; sourceTree = "<group>"; };
+		69D20EF6BB8AFE2CB669DA77 /* Pods-PoliticalFactFictionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoliticalFactFictionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoliticalFactFictionUITests/Pods-PoliticalFactFictionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F96E0C3B3524FF0A46D9BF7 /* Pods-PoliticalFactFictionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoliticalFactFictionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoliticalFactFictionTests/Pods-PoliticalFactFictionTests.release.xcconfig"; sourceTree = "<group>"; };
+		800A1B911D6CFB8A0019A24D /* MultiGameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiGameOverViewController.swift; sourceTree = "<group>"; };
+		8013A0F31D6CA79300663F72 /* EndRoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndRoundViewController.swift; sourceTree = "<group>"; };
+		8090C8801D6906EA00C90845 /* MultiPlayerTeamReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPlayerTeamReadyViewController.swift; sourceTree = "<group>"; };
+		80F8E35D1D6E432D00FB275B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B482E5D1D1FAD30001CC564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B482E711D1FAD30001CC564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B482E7C1D1FAD30001CC564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07E30EB5060C33FECBB5FBA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16465D3E3CA036ED835B3A0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				410C8DBBB3A4A7FB5335D583 /* Pods-PoliticalFactFiction.debug.xcconfig */,
+				5073A7A869CE2433963EDD96 /* Pods-PoliticalFactFiction.release.xcconfig */,
+				3F544BAE16FCC93071D2B3A2 /* Pods-PoliticalFactFictionTests.debug.xcconfig */,
+				7F96E0C3B3524FF0A46D9BF7 /* Pods-PoliticalFactFictionTests.release.xcconfig */,
+				69D20EF6BB8AFE2CB669DA77 /* Pods-PoliticalFactFictionUITests.debug.xcconfig */,
+				1EA61146A50F6DF5CC6DA2F0 /* Pods-PoliticalFactFictionUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2B482E571D1FAD30001CC564 = {
+			isa = PBXGroup;
+			children = (
+				5CA254211D7361CE0024B927 /* Sounds */,
+				5C2909B71D346D4D00E6BA9A /* Resources */,
+				2B482E621D1FAD30001CC564 /* PoliticalFactFiction */,
+				2B482E771D1FAD30001CC564 /* PoliticalFactFictionTests */,
+				2B482E821D1FAD30001CC564 /* PoliticalFactFictionUITests */,
+				2B482E611D1FAD30001CC564 /* Products */,
+				16465D3E3CA036ED835B3A0C /* Pods */,
+				07E30EB5060C33FECBB5FBA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B482E611D1FAD30001CC564 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B482E601D1FAD30001CC564 /* PoliticalFactFiction.app */,
+				2B482E741D1FAD30001CC564 /* PoliticalFactFictionTests.xctest */,
+				2B482E7F1D1FAD30001CC564 /* PoliticalFactFictionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B482E621D1FAD30001CC564 /* PoliticalFactFiction */ = {
+			isa = PBXGroup;
+			children = (
+				2B482E671D1FAD30001CC564 /* Main.storyboard */,
+				2B482E651D1FAD30001CC564 /* StartScreenViewController.swift */,
+				5C979BDB1D3407E800F9518A /* HelpViewController.swift */,
+				5C6E13B81D8DE62A006D3207 /* CreditsViewController.swift */,
+				2B7ADE751D31E998008E3D93 /* SinglePlayerViewController.swift */,
+				2B84529C1D320A5000255AFD /* SP_QuestionContainer_ViewController.swift */,
+				5C944F151D39630A00D0F2F1 /* MultiplayerOptionsViewController.swift */,
+				8090C8801D6906EA00C90845 /* MultiPlayerTeamReadyViewController.swift */,
+				8013A0F31D6CA79300663F72 /* EndRoundViewController.swift */,
+				800A1B911D6CFB8A0019A24D /* MultiGameOverViewController.swift */,
+				5C944F131D39328400D0F2F1 /* PauseViewController.swift */,
+				5C70CCE51D3A993800C5C84A /* GameOverViewController.swift */,
+				80F8E35D1D6E432D00FB275B /* CustomTableViewCell.swift */,
+				5C8820C51D3BE2A70041F539 /* Utilities.swift */,
+				5CB5ABFB1D3562B0001EB823 /* SP_SubViewControllers */,
+				2B482E631D1FAD30001CC564 /* AppDelegate.swift */,
+				2B482E6A1D1FAD30001CC564 /* Assets.xcassets */,
+				2B482E6C1D1FAD30001CC564 /* LaunchScreen.storyboard */,
+				2B7ADE731D31E067008E3D93 /* GoogleService-Info.plist */,
+				2B482E6F1D1FAD30001CC564 /* Info.plist */,
+			);
+			path = PoliticalFactFiction;
+			sourceTree = "<group>";
+		};
+		2B482E771D1FAD30001CC564 /* PoliticalFactFictionTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B482E781D1FAD30001CC564 /* PoliticalFactFictionTests.swift */,
+				2B482E7A1D1FAD30001CC564 /* Info.plist */,
+			);
+			path = PoliticalFactFictionTests;
+			sourceTree = "<group>";
+		};
+		2B482E821D1FAD30001CC564 /* PoliticalFactFictionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B482E831D1FAD30001CC564 /* PoliticalFactFictionUITests.swift */,
+				2B482E851D1FAD30001CC564 /* Info.plist */,
+			);
+			path = PoliticalFactFictionUITests;
+			sourceTree = "<group>";
+		};
+		5C2909B71D346D4D00E6BA9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C2909B81D346D7B00E6BA9A /* BalsamiqSansBold.ttf */,
+				5C2909B91D346D7B00E6BA9A /* BalsamiqSansBoldItalic.ttf */,
+				5C2909BA1D346D7B00E6BA9A /* BalsamiqSansItalic.ttf */,
+				5C2909BB1D346D7B00E6BA9A /* BalsamiqSansRegular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5CA254211D7361CE0024B927 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5CA254361D738F370024B927 /* beep-negative.wav */,
+				5CA254371D738F370024B927 /* beep-positive.wav */,
+				5CA254261D7366570024B927 /* tap-warm.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		5CB5ABFB1D3562B0001EB823 /* SP_SubViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5CB5ABFE1D356374001EB823 /* FictionViewController.swift */,
+				5CB5ABFF1D356374001EB823 /* FictionViewController.xib */,
+				5CB5AC021D3563EE001EB823 /* StatementViewController.swift */,
+				5CB5AC031D3563EE001EB823 /* StatementViewController.xib */,
+				5CB5AC061D3563F6001EB823 /* FactViewController.swift */,
+				5CB5AC071D3563F6001EB823 /* FactViewController.xib */,
+			);
+			name = SP_SubViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B482E5F1D1FAD30001CC564 /* PoliticalFactFiction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B482E881D1FAD30001CC564 /* Build configuration list for PBXNativeTarget "PoliticalFactFiction" */;
+			buildPhases = (
+				CF9DA1A2D270E1615715C3BC /* [CP] Check Pods Manifest.lock */,
+				2B482E5C1D1FAD30001CC564 /* Sources */,
+				2B482E5D1D1FAD30001CC564 /* Frameworks */,
+				2B482E5E1D1FAD30001CC564 /* Resources */,
+				94DE97679533934DB21D4D1A /* [CP] Embed Pods Frameworks */,
+				FABEEDCCF79436F2010451CE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PoliticalFactFiction;
+			productName = PoliticalFactFiction;
+			productReference = 2B482E601D1FAD30001CC564 /* PoliticalFactFiction.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B482E731D1FAD30001CC564 /* PoliticalFactFictionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B482E8B1D1FAD30001CC564 /* Build configuration list for PBXNativeTarget "PoliticalFactFictionTests" */;
+			buildPhases = (
+				2AAD379EC0176B5F7F0BC0A2 /* [CP] Check Pods Manifest.lock */,
+				2B482E701D1FAD30001CC564 /* Sources */,
+				2B482E711D1FAD30001CC564 /* Frameworks */,
+				2B482E721D1FAD30001CC564 /* Resources */,
+				B840D7B8FFCC7DF836460956 /* [CP] Embed Pods Frameworks */,
+				6DC06BA1CD1FEFD7A37A370A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B482E761D1FAD30001CC564 /* PBXTargetDependency */,
+			);
+			name = PoliticalFactFictionTests;
+			productName = PoliticalFactFictionTests;
+			productReference = 2B482E741D1FAD30001CC564 /* PoliticalFactFictionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B482E7E1D1FAD30001CC564 /* PoliticalFactFictionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B482E8E1D1FAD30001CC564 /* Build configuration list for PBXNativeTarget "PoliticalFactFictionUITests" */;
+			buildPhases = (
+				08754F5C14749B1F3740B180 /* [CP] Check Pods Manifest.lock */,
+				2B482E7B1D1FAD30001CC564 /* Sources */,
+				2B482E7C1D1FAD30001CC564 /* Frameworks */,
+				2B482E7D1D1FAD30001CC564 /* Resources */,
+				719CE25D4701175C22987E7C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B482E811D1FAD30001CC564 /* PBXTargetDependency */,
+			);
+			name = PoliticalFactFictionUITests;
+			productName = PoliticalFactFictionUITests;
+			productReference = 2B482E7F1D1FAD30001CC564 /* PoliticalFactFictionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B482E581D1FAD30001CC564 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = jpwm;
+				TargetAttributes = {
+					2B482E5F1D1FAD30001CC564 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3C88TTWHMV;
+						ProvisioningStyle = Automatic;
+					};
+					2B482E731D1FAD30001CC564 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2B482E5F1D1FAD30001CC564;
+					};
+					2B482E7E1D1FAD30001CC564 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2B482E5F1D1FAD30001CC564;
+					};
+				};
+			};
+			buildConfigurationList = 2B482E5B1D1FAD30001CC564 /* Build configuration list for PBXProject "PoliticalFactFiction" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B482E571D1FAD30001CC564;
+			productRefGroup = 2B482E611D1FAD30001CC564 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B482E5F1D1FAD30001CC564 /* PoliticalFactFiction */,
+				2B482E731D1FAD30001CC564 /* PoliticalFactFictionTests */,
+				2B482E7E1D1FAD30001CC564 /* PoliticalFactFictionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B482E5E1D1FAD30001CC564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CB5AC011D356374001EB823 /* FictionViewController.xib in Resources */,
+				5CA254381D738F370024B927 /* beep-negative.wav in Resources */,
+				5C2909BC1D346D7B00E6BA9A /* BalsamiqSansBold.ttf in Resources */,
+				5C2909BE1D346D7B00E6BA9A /* BalsamiqSansItalic.ttf in Resources */,
+				2B482E6E1D1FAD30001CC564 /* LaunchScreen.storyboard in Resources */,
+				5C2909BD1D346D7B00E6BA9A /* BalsamiqSansBoldItalic.ttf in Resources */,
+				5CB5AC051D3563EE001EB823 /* StatementViewController.xib in Resources */,
+				5CB5AC091D3563F6001EB823 /* FactViewController.xib in Resources */,
+				5CA254391D738F370024B927 /* beep-positive.wav in Resources */,
+				5C2909BF1D346D7B00E6BA9A /* BalsamiqSansRegular.ttf in Resources */,
+				2B7ADE741D31E067008E3D93 /* GoogleService-Info.plist in Resources */,
+				2B482E6B1D1FAD30001CC564 /* Assets.xcassets in Resources */,
+				2B482E691D1FAD30001CC564 /* Main.storyboard in Resources */,
+				5CA254271D7366570024B927 /* tap-warm.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B482E721D1FAD30001CC564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B482E7D1D1FAD30001CC564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08754F5C14749B1F3740B180 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2AAD379EC0176B5F7F0BC0A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6DC06BA1CD1FEFD7A37A370A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoliticalFactFictionTests/Pods-PoliticalFactFictionTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		719CE25D4701175C22987E7C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoliticalFactFictionUITests/Pods-PoliticalFactFictionUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94DE97679533934DB21D4D1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoliticalFactFiction/Pods-PoliticalFactFiction-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B840D7B8FFCC7DF836460956 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoliticalFactFictionTests/Pods-PoliticalFactFictionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF9DA1A2D270E1615715C3BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FABEEDCCF79436F2010451CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoliticalFactFiction/Pods-PoliticalFactFiction-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B482E5C1D1FAD30001CC564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CB5AC041D3563EE001EB823 /* StatementViewController.swift in Sources */,
+				8090C8811D6906EA00C90845 /* MultiPlayerTeamReadyViewController.swift in Sources */,
+				5C944F161D39630A00D0F2F1 /* MultiplayerOptionsViewController.swift in Sources */,
+				2B7ADE761D31E998008E3D93 /* SinglePlayerViewController.swift in Sources */,
+				800A1B921D6CFB8A0019A24D /* MultiGameOverViewController.swift in Sources */,
+				5CB5AC081D3563F6001EB823 /* FactViewController.swift in Sources */,
+				5C6E13B91D8DE62A006D3207 /* CreditsViewController.swift in Sources */,
+				2B482E661D1FAD30001CC564 /* StartScreenViewController.swift in Sources */,
+				2B482E641D1FAD30001CC564 /* AppDelegate.swift in Sources */,
+				2B84529D1D320A5000255AFD /* SP_QuestionContainer_ViewController.swift in Sources */,
+				80F8E35E1D6E432D00FB275B /* CustomTableViewCell.swift in Sources */,
+				5C70CCE61D3A993800C5C84A /* GameOverViewController.swift in Sources */,
+				5CB5AC001D356374001EB823 /* FictionViewController.swift in Sources */,
+				5C979BDC1D3407E800F9518A /* HelpViewController.swift in Sources */,
+				5C8820C61D3BE2A70041F539 /* Utilities.swift in Sources */,
+				5C944F141D39328400D0F2F1 /* PauseViewController.swift in Sources */,
+				8013A0F41D6CA79300663F72 /* EndRoundViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B482E701D1FAD30001CC564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B482E791D1FAD30001CC564 /* PoliticalFactFictionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B482E7B1D1FAD30001CC564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B482E841D1FAD30001CC564 /* PoliticalFactFictionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B482E761D1FAD30001CC564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B482E5F1D1FAD30001CC564 /* PoliticalFactFiction */;
+			targetProxy = 2B482E751D1FAD30001CC564 /* PBXContainerItemProxy */;
+		};
+		2B482E811D1FAD30001CC564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B482E5F1D1FAD30001CC564 /* PoliticalFactFiction */;
+			targetProxy = 2B482E801D1FAD30001CC564 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B482E671D1FAD30001CC564 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B482E681D1FAD30001CC564 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B482E6C1D1FAD30001CC564 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B482E6D1D1FAD30001CC564 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B482E861D1FAD30001CC564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B482E871D1FAD30001CC564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B482E891D1FAD30001CC564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 410C8DBBB3A4A7FB5335D583 /* Pods-PoliticalFactFiction.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3C88TTWHMV;
+				INFOPLIST_FILE = PoliticalFactFiction/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpwm.PoliFactFict;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2B482E8A1D1FAD30001CC564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5073A7A869CE2433963EDD96 /* Pods-PoliticalFactFiction.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3C88TTWHMV;
+				INFOPLIST_FILE = PoliticalFactFiction/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpwm.PoliFactFict;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2B482E8C1D1FAD30001CC564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F544BAE16FCC93071D2B3A2 /* Pods-PoliticalFactFictionTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PoliticalFactFictionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpwm.PoliticalFactFictionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoliticalFactFiction.app/PoliticalFactFiction";
+			};
+			name = Debug;
+		};
+		2B482E8D1D1FAD30001CC564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F96E0C3B3524FF0A46D9BF7 /* Pods-PoliticalFactFictionTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PoliticalFactFictionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpwm.PoliticalFactFictionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoliticalFactFiction.app/PoliticalFactFiction";
+			};
+			name = Release;
+		};
+		2B482E8F1D1FAD30001CC564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69D20EF6BB8AFE2CB669DA77 /* Pods-PoliticalFactFictionUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = PoliticalFactFictionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpwm.PoliticalFactFictionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PoliticalFactFiction;
+			};
+			name = Debug;
+		};
+		2B482E901D1FAD30001CC564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA61146A50F6DF5CC6DA2F0 /* Pods-PoliticalFactFictionUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = PoliticalFactFictionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpwm.PoliticalFactFictionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PoliticalFactFiction;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B482E5B1D1FAD30001CC564 /* Build configuration list for PBXProject "PoliticalFactFiction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B482E861D1FAD30001CC564 /* Debug */,
+				2B482E871D1FAD30001CC564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B482E881D1FAD30001CC564 /* Build configuration list for PBXNativeTarget "PoliticalFactFiction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B482E891D1FAD30001CC564 /* Debug */,
+				2B482E8A1D1FAD30001CC564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B482E8B1D1FAD30001CC564 /* Build configuration list for PBXNativeTarget "PoliticalFactFictionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B482E8C1D1FAD30001CC564 /* Debug */,
+				2B482E8D1D1FAD30001CC564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B482E8E1D1FAD30001CC564 /* Build configuration list for PBXNativeTarget "PoliticalFactFictionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B482E8F1D1FAD30001CC564 /* Debug */,
+				2B482E901D1FAD30001CC564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B482E581D1FAD30001CC564 /* Project object */;
+}
